@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bc {background-color: seashell;}
+        .cls1{padding-bottom: 20px;} 
+        /* 패딩은 안쪽 마진은 바깥쪽 */
+        .cls2{margin-bottom: 20px;}
+        /*
+        사용방법 3가지 
+        padding:
+        margin:
+        값 4개 사용 : 상하좌우 시계방향 상우하좌
+        */
+        .p1 {
+            border-width: 1px;
+            border-style: solid;
+            border-color: sienna;
+            border: 1px solid black;
+            width : 100px; height: 100px;
+        padding : 10px 10px 10px 10px;}
+
+        .p2 {width : 100px; height: 100px;
+        padding : 10px 30px 10px;} /* 위 양쪽 아래*/
+
+        .p3 {width : 100px; height: 100px;
+        padding : 10px 100px;} /*위아래 양쪽*/
+
+        .p4 {width : 100px; height: 100px;
+        padding : 20px;} /*모든 값*/
+    </style>
+</head>
+<body>
+    <div class ="bc cls1">ABC</div>
+    <div>가나다</div>
+    <hr>
+    <div class="bc cls2">ABC</div>
+    <div>가나다</div>
+    <hr>
+    <div class="bc p1">패딩패딩패딩패딩패딩패딩패딩</div>
+    <hr>
+    <div class="bc p2">패딩패딩패딩패딩패딩패딩패딩</div>
+    <hr>
+    <div class="bc p3">패딩패딩패딩패딩패딩패딩패딩</div>
+    <hr>
+    <div class="bc p4">패딩패딩패딩패딩패딩패딩패딩</div>
+
+</body>
+</html>

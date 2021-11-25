@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        static, fixed(화면 고정)
+        , relative, absoulte
+        , sticky(스크롤하면 젤 위에 고정)
+        포지션에 아무런값 안주면 static - div값 안먹힘
+        relative, absoulte 는 div값이 먹힘
+        psoition에 저 두값을 주면 스태틱이 아닌것
+        - 레프트 값 탑 값 안주면 relative 줘도 스태틱이랑 같음
+        */
+        div{left:50px; width: 100px; height: 100px; background-color: skyblue; margin: 1px;}
+        .sta{left: 100px;}
+        .relOri{position: relative;}
+        .mini{width: 20px; height: 20px; background-color: slateblue; top:10px; right:50px;}
+        .rel{position: relative; left: 100px; top: 20px;}
+        .abs{position: absolute;}
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div class="sta">2</div>
+    <div class="relOri">3</div>
+    <div class="rel">4</div>
+
+    <div>
+        <div class="mini rel"></div>
+    </div>
+    <div>  
+        <!-- 부모 값을 따름(body) div가 스태틱이기때문 -->
+        <div class="mini abs"></div>
+    </div>
+    <div class=relOri>  
+        <!-- 부모 값을 따름(body) div가 스태틱이기때문 -->
+        <div class="mini abs"></div>
+    </div>
+    
+</body>
+</html>

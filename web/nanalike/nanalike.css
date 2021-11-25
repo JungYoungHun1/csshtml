@@ -1,0 +1,37 @@
+* { margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
+body{background-color: #f5f5f5;}
+.wrap{
+    display: grid; grid-template-columns: 200px minmax(420px, 1fr);
+    grid-template-rows: 56px 1fr;
+} 
+.header{background-color: #ff3b49; grid-row:span 2; min-height: 100vh; color:#fff;}
+.header .logo{ margin: 40px 0 50px; font-size:27px; text-align: center; font-family: 'Shrikhand';}
+.header .nav_container {margin-bottom: 40px;}
+.header .nav_title{display : block; font-size:80%; background-color: #ff5662; padding: 8px 20px; margin-bottom: 12px; }
+.header .nav_list { font-size: 16px; padding : 0 20px;}
+.header .nav_item { margin-bottom: 8px;}
+.header .nav_link { color: #fff; text-decoration: none;}
+
+.top-bar {background-color: #f0f0f0; display: grid; grid-template-columns: 1fr 52px; column-gap: 5px; justify-content: center; align-content: center;}
+.top-bar .search {padding:10px;}
+.top-bar .search .search_form {width: 100%;}
+.top-bar .search .search_label{ display: block; overflow:hidden; width: 0; height: 0;}
+.top-bar .search .search_input{ width: 100%; padding: 8px 10px; border: 1px solid #d0d0d0;}
+.top-bar .search .search_input:focus,
+.top-bar .search .search_input:hover {outline: 0; border-color: #999;}
+
+.top-bar .profile {display: flex; justify-content: center; align-items: center;}
+.top-bar .profile .profile_icon {width: 40px; height: 40px; background-color: rgb(110, 90, 240); border-radius: 50%; text-align: center; line-height: 42px; font-family: "Shrikhand"; color: white; font-size: 18px;}
+
+.main .main_header{position: relative; font-size:30px; text-align : center;padding: 100px 20px; background-image: url('http://unsplash.it/1200/600?image=495');background-size: cover;}
+.main .main_header:after {position: absolute; display: block; left: 0; top: 0; width: 100%; height: 100%; background-color:rgba(10, 10, 10, 0.6); content: "";}
+.main .main_title{z-index: 1; position: relative; color: #fff;}
+.main .listing-card { max-width: 1600px; margin: 30px auto 60px; padding: 0 20px; background-color: #f0f0f0;}
+.main .listing-card_list {display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+gap: 30px;
+}
+.main .listing-card_item {padding: 20px; width: 100%; background-color: white; border: 1px solid #f0f0f0;}
+.main .listing-card_image{ padding-top: 100%;height: 0; background-size: cover; background-repeat: no-repeat;}
+.main .listing-card_info{margin: 20px 0 10px;}
+.main .listing-card_name{font-size: 18px;}
+.main .listing-card_date{ color: #333; margin-top: 6px;}
